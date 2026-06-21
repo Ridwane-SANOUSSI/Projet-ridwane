@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <htmlxmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"> 
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Mon projet listes</title>
+        <link rel="stylesheet"  href="Tp_liste.css" />    
+    </head>
+    <body>
+        <h1>
+            Voici un travil pratique sur les différent type de listes existent en html
+        </h1>
+        <ul>
+            <li>Fraises</li>
+            <li>Framboises</li>
+            <li>Cerises</li>
+        </ul>
+        <ol>
+            <li>Je me lève</li>
+            <li>Je mange et je bois</li>
+            <li>Je retourne me coucher</li>
+        </ol>
+        <dl>
+            <dt>Chat</dt>
+            <dd>Animal à 4 pattes qui fait "Miaou !"</dd>
+            <dt>Chien</dt>
+            <dd>Animal à 4 pattes qui fait "Ouaf Ouaf !"</dd>
+            <dt>Prof de maths</dt>
+            <dd>Personne qui enseigne des choses que personne ne comprend</dd>
+        </dl>
+        <p>Voici une liste avec retrait (par défaut) :</p>
+        <ul class="retrait">
+            <li>Liste<br />à puces</li>
+            <li>Première ligne<br />Deuxième Ligne </li>
+            <li>Vous pouvez voir<br />que le texte est décalé sur la droite</li>
+        </ul>
+        <p>Voici une liste sans retrait :</p>
+        <ul class="pas_de_retrait">
+            <li>Liste<br />à puces</li>
+            <li>Ligne 1<br />Ligne 2</li>
+            <li>Vous pouvez voir<br />que le texte n'est pas décalé sur la droite</li>
+        </ul>
+        <div>
+          <h2>Quelques listes non ordonnées</h2>
+            <p>Voici une liste à puce non ordonnée sans modification (= <em>disc</em>) :</p>
+            <ul class="photo">
+            <li>Ronaldo</li>
+                <li>Messi</li>
+                <li>Neymar</li>
+            </ul>
+            <p>Avec <em>circle</em> :<br/>liste de pays Africains</p>
+            <ul class="cercle">
+                <li>Bénin</li>
+                <li>Niger</li>
+                <li>Togo</li>
+            </ul>
+            <p>Avec <em>square</em> :<br/>liste de continents </p>
+            <ul class="carre">
+                <li>Afrique</li>
+                <li>Amérique</li>
+                <li>Europe</li>
+            </ul>
+            <p>Avec <em>none</em> (sans puces) :<br/>liste de ville béninoise</p>
+            <ul class="rien">
+                <li>Cotonou</li>
+                <li>Abomey-Calavi</li>
+                <li>Porto-Novo</li>
+            </ul>
+            <h2>Quelques listes ordonnées</h2>
+            <p>Liste à puces ordonnée sans modification (= <em>decimal</em>)<br/>Point fondamenteaux de la réusite</p>
+            <ol class="photo">
+                <li>Discipline</li>
+                <li>Travail</li>
+                <li>Volonté</li>
+                <li>Proactivité</li>
+            </ol>
+            <p>Avec <em>decimal-leading-zero</em> (<strong>Ne fonctionne pas sous IE)</strong> :</p>
+            <p>
+                Etapes pour réalisé des sites web
+            </p>
+
+            <ol class="commence_a_zero">
+                <li>Apprendre html</li>
+                <li>Apprendre csss</li>
+                <li>Apprendre bootstrap</li>
+                <li>Généré des sites web</li>
+            </ol>
+            <p>Avec <em>lower-alpha</em> :<br/>Quelques mots</p>
+                <ol class="lettres_minuscules">
+                <li>Manger </li>
+                <li>jouer</li>
+                <li>parler</li>
+                <li>chanter</li>
+            </ol>
+            <p>Avec <em>upper-roman</em> :<br/>Programation web</p>
+            <ol class="chiffres_romains">
+                <li>Code python</li>
+                <li>Base de donnée</li>
+                <li>Requet sql</li>
+                <li>Gestion du git</li>
+            </ol>
+            <p>Avec <em>lower-greek</em> (<strong>Ne fonctionne pas sous IE</strong>) :<br/>Analyse de projet</p>
+            <ol class="lettres_grecques">
+                <li>Analyse des besoins</li>
+                <li>Cahiers de charges</li>
+                <li>maquettes</li>
+                <li>Gestion de projet</li>
+            </ol>
+
+        </div>
+      
+    </body>
+</html>

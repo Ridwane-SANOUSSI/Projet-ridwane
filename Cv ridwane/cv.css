@@ -1,0 +1,190 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      
+    }
+
+    .cv {
+      width: 900px;
+      margin: 40px auto;
+      background: bisque;
+      display: flex;
+      box-shadow: 0 4px 20px steelblue;
+    }
+
+    .gauche {
+      width: 400px;
+      background:aquamarine;
+      color:black;
+      padding: 15px 20px;
+      height: 100%;
+    }
+
+    .photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 70%;
+      background: #2e797a;
+      margin: 0 auto 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      border: 3px solid #4ad4d9;
+      overflow: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .nom {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .nom h1 {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .nom p {
+      font-size: 12px;
+      color:black;
+      margin-top: 5px;
+    }
+
+    .section-gauche {
+      margin-bottom: 25px;
+    }
+
+    .section-gauche h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #4a90d9;
+      border-bottom: 1px solid #2e4f7a;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    .contact-item {
+      font-size: 13px;
+      margin-bottom: 8px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .contact-item span:first-child {
+      color: #4a90d9;
+      min-width: 20px;
+    }
+
+    .competence {
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+
+    .competence p {
+      margin-bottom: 4px;
+    }
+
+    .barre {
+      background: #2e4f7a;
+      border-radius: 10px;
+      height: 6px;
+    }
+
+    .barre-fill {
+      height: 6px;
+      border-radius: 10px;
+      background: #4a90d9;
+    }
+
+    .langue {
+      font-size: 13px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .langue span:last-child {
+      color: #4a90d9;
+    }
+
+    .droite {
+      flex: 1;
+      padding: 35px 30px;
+      height: 100%
+    }
+
+    .section-droite {
+      margin-bottom: 28px;
+    }
+
+    .section-droite h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #1a2e4a;
+      border-left: 4px solid #4a90d9;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    .profil-text {
+      font-size: 13.5px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .formation {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 12px;
+    }
+
+    .formation .annee {
+      font-size: 12px;
+      color: white;
+      background: #1a2e4a;
+      padding: 3px 8px;
+      border-radius: 5px;
+      height: fit-content;
+      white-space: nowrap;
+    }
+
+    .formation h4 {
+      font-size: 14px;
+      color: #1a2e4a;
+    }
+
+    .formation p {
+      font-size: 13px;
+      color: #777;
+    }
+
+    .interet-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .interet-list span {
+      background: #e8f0fb;
+      color: #1a2e4a;
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 12px;
+    }
+  

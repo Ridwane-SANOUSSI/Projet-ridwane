@@ -1,0 +1,69 @@
+/* Style général du tableau (dimensions fixes) */
+.tableau-eneam {
+    border-collapse: collapse;
+    border: double,solid;
+    width: 600px;
+    height: 450px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Style de base pour TOUTES les cellules */
+.tableau-eneam td {
+    border: 3px solid #000000;
+    vertical-align: middle;
+    
+}
+
+/* Tailles des textes selon les zones */
+.case-eneam {
+     font-size: 32px;
+}
+.couleur{
+    color: blue;
+}
+.case-ig{
+    font-size: 55px
+}
+, .case-a, .case-b, .case-c {
+     font-size: 26px; 
+}
+.case-epac, .case-prog {
+     font-size: 22px; 
+}
+
+/* --- Les demandes spécifiques du prof --- */
+
+/* 1. Le Bleu Ciel uniquement sur IG1-B et sur A */
+.case-ig {
+    background-color: #87CEEB; 
+    width: 35%; /* Largeur fixe pour respecter le dessin */
+}
+
+.case-a {;
+    width: 20%;
+    height: 110px; /* Force les hauteurs égales pour A et B */
+}
+
+.case-b,.case-c {
+    height: 110px;
+    width: 50%
+}
+
+
+/* 2. L'effet oblique (CSS pur) */
+.texte-oblique {
+    display: inline-block;
+    transform: rotate(+45deg); /* Incline le texte vers le haut */
+
+}
+.oblique{
+     display: inline-block;
+    transform: rotate(-15deg);
+}
+.text-oblique {
+     display: inline-block;
+    transform: rotate(-45deg); 
+}
