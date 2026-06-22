@@ -1,228 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Ridwane html/TP_tableau.css">
     <title>TP_tableau</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        td /* Toutes les cellules des tableaux... */{
-    border: 1px solid black; /* ... auront une bordure de 1px */
-}
+        /* 🎨 Couleur de fond pro, douce et moderne */
+        body {
+            background-color: #f1f5f9; 
+            width: 90%; /* Un peu plus large pour maximiser l'espace sur mobile */
+            max-width: 900px;
+            text-align: justify;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            font-size: larger;
+            color: #334155;
+        }
 
-td{
-    border: 1px solid black;
-}
-table{
-    border-collapse: collapse;
-    background-color: azure;
-}
-    td, th /* Mettre une bordure sur les td ET les th */{
-    border: 1px solid black;
-}
- body{
-    background-color: bisque;
-     width: 80%;
-    text-align:justify;
-     margin-left: auto;
-    margin-right: auto;
-    font-family: Arial, sans-serif;
-    font-size:larger;
- }
-h1,h2 {
-    background-color: aqua;
-}
+        /* Adaptation de tes couleurs d'en-tête (Style Aqua modernisé et plus pro) */
+        h1, h2 {
+            background-color: #06b6d4; 
+            color: #ffffff;
+            padding: 8px 12px;
+            font-size: 1.4rem;
+            border-radius: 4px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* Style de tes tableaux */
+        table {
+            border-collapse: collapse;
+            background-color: azure;
+            width: 100%; /* Le tableau prend toute la largeur du bloc pour être responsive */
+            margin-bottom: 20px;
+        }
+
+        td, th {
+            border: 1px solid #475569;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e2e8f0;
+            color: #0f172a;
+            font-weight: bold;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #0f172a;
+        }
+
+        /* Conteneur spécial pour empêcher les tableaux de déborder sur petit écran */
+        .table-responsive-custom {
+            overflow-x: auto;
+            width: 100%;
+            margin-bottom: 25px;
+        }
     </style>
-
 </head>
 <body>
+
     <div class="table1">
-         <h1> Exemple de Tableau</h1>
-        <table>
-        <tr>
-        <td>Carmen</td>
-        <td>33 ans</td>
-        <td>Espagne</td>
-        </tr>
-        <tr>
-        <td>Michelle</td>
-        <td>26 ans</td>
-        <td>Etats-Unis</td>
-        </tr>
-         </table>
+        <h1>Exemple de Tableau</h1>
+        <div class="table-responsive-custom">
+            <table>
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 ans</td>
+                    <td>Espagne</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 ans</td>
+                    <td>Etats-Unis</td>
+                </tr>
+            </table>
+        </div>
     </div>
+
     <div>
-     <h1> Premier exemple de Tableau</h1>    
-    <table class="table2">
-    <tr>
-    <th> SANOUSSI</th>
-        <th>17ans</th>
-        <th>Bénin</th>
-        </tr>
-    <tr>
-    <td>Carmen</td>
-    <td>33 ans</td>
-    <td>Espagne</td>
-    </tr>
-    <tr>
-    <td>Michelle</td>
-    <td>26 ans</td>
-    <td>Etats-Unis</td>
-    </tr>
-    </table> 
+        <h1>Premier exemple de Tableau</h1>    
+        <div class="table-responsive-custom">
+            <table class="table2">
+                <tr>
+                    <th>SANOUSSI</th>
+                    <th>17 ans</th>
+                    <th>Bénin</th>
+                </tr>
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 ans</td>
+                    <td>Espagne</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 ans</td>
+                    <td>Etats-Unis</td>
+                </tr>
+            </table> 
+        </div>
     </div>
-    <h1> Deuxième exemple de Tableau</h1>
+
+    <h1>Deuxième exemple de Tableau</h1>
     <div>
-        <table>
-        <caption>Passagers du vol 377</caption>
-        <tr>
-        <th> SANOUSSI</th>
-        <th>17ans</th>
-        <th>Bénin</th>
-        </tr>
-        </tr>
-        <tr>
-        <td>Carmen</td>
-        <td>33 ans</td>
-        <td>Espagne</td>
-        </tr>
-        <tr>
-        <td>Michelle</td>
-        <td>26 ans</td>
-        <td>Etats-Unis</td>
-        </tr>
-        </table>
+        <div class="table-responsive-custom">
+            <table>
+                <caption>Passagers du vol 377</caption>
+                <tr>
+                    <th>SANOUSSI</th>
+                    <th>17 ans</th>
+                    <th>Bénin</th>
+                </tr>
+                <tr>
+                    <td>Carmen</td>
+                    <td>33 ans</td>
+                    <td>Espagne</td>
+                </tr>
+                <tr>
+                    <td>Michelle</td>
+                    <td>26 ans</td>
+                    <td>Etats-Unis</td>
+                </tr>
+            </table>
+        </div>
     </div>
-     <div>
-         <h1>Exemple de Tableau élaboré </h1>
-         <table>
-        <caption>Passagers du vol 377</caption>
-        <thead> <!-- En-tête du tableau -->
-        <tr>
-            <th>Nom</th>
-        <th>age</th>
-        <th>Pays</th>
-        </tr>        
-        </thead>
-        <tr>
-        <th> SANOUSSI</th>
-        <th>17ans</th>
-        <th>Bénin</th>
-        </tr>
-        </thead>
-        <tfoot> <!-- Pied de tableau -->
-        <tr>
-        <th> Nom</th>
-        <th>Age</th>
-        <th>pays</th>
-        </tr>
-        </tr>
-        </tfoot>
-        <tbody> <!-- Corps du tableau -->
-        <tr>
-        <td>Carmen</td>
-        <td>33 ans</td>
-        <td>Espagne</td>
-        </tr>
-        <tr>
-        <td>Michelle</td>
-        <td>26 ans</td>
-        <td>Etats-Unis</td>
-        </tr>
-        <tr>
-        <td>François</td>
-        <td>43 ans</td>
-        <td>France</td>
-        <tr>
-        <th>Nom</th>
-        <th>Age</th>
-        <th>Pays</th>
-        
-        </tr>
-        
-        
-        </thead>
-        <tfoot> <!-- Pied de tableau -->
-        <tr>
-        <th>Nom</th>
-        <th>Age</th>
-        <th>Pays</th>
-        </tr>
-        </tfoot>
-        <tbody> <!-- Corps du tableau -->
-        <tr>
-        <td>Carmen</td>
-        <td>33 ans</td>
-        <td>Espagne</td>
-        </tr>
-        <tr>
-        <td>Michelle</td>
-        <td>26 ans</td>
-        <td>Etats-Unis</td>
-        </tr>
-        <tr>
-        <td>Martine</td>
-        <td>34 ans</td>
-        <td>France</td>
-        </tr>
-        <tr>
-        <td>Jonathan</td>
-        <td>13 ans</td>
-        <td>Australie</td>
-        </tr>
-        <tr>
-        <td>Xu</td>
-        <td>19 ans</td>
-        <td>Chine</td>
-        </tr>
-        </tbody>
-        </table>
 
+    <div>
+        <h1>Exemple de Tableau élaboré</h1>
+        <div class="table-responsive-custom">
+            <table>
+                <caption>Passagers du vol 377</caption>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Age</th>
+                        <th>Pays</th>
+                    </tr>        
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Age</th>
+                        <th>Pays</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th>SANOUSSI</th>
+                        <th>17 ans</th>
+                        <th>Bénin</th>
+                    </tr>
+                    <tr>
+                        <td>Carmen</td>
+                        <td>33 ans</td>
+                        <td>Espagne</td>
+                    </tr>
+                    <tr>
+                        <td>Michelle</td>
+                        <td>26 ans</td>
+                        <td>Etats-Unis</td>
+                    </tr>
+                    <tr>
+                        <td>François</td>
+                        <td>43 ans</td>
+                        <td>France</td>
+                    </tr>
+                    <tr>
+                        <td>Martine</td>
+                        <td>34 ans</td>
+                        <td>France</td>
+                    </tr>
+                    <tr>
+                        <td>Jonathan</td>
+                        <td>13 ans</td>
+                        <td>Australie</td>
+                    </tr>
+                    <tr>
+                        <td>Xu</td>
+                        <td>19 ans</td>
+                        <td>Chine</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-     </div>
-     <div>
-        <h2>Tableau montrant les fusions </h2>
-        <table>
-        <tr>
-        <th>Titre du film</th>
-        <th>Pour enfants ?</th>
-        <th>Pour adolescents ?</th>
-        </tr>
-        <tr>
-        <td>Massacre à la tronçonneuse</td>
-        <td >Non, trop violent</td>
-        <td>Oui</td>
-        </tr>
-        <tr>
-        <td>Les bisounours font du ski</td>
-        <td>Oui, adapté</td>
-        <td>Pas assez violent...</td>
-        </tr>
-        <tr>
-        <td>Lucky Luke, seul contre tous</td>
-        <td colspan="2">Pour toute la famille !</td>
-        </tr>
-        </table>
-        <table>
-        <tr>
-        <th>Titre du film</th>
-        <td>Massacre à la tronçonneuse</td>
-        <td>Les bisounours font du ski</td>
-        <td>Lucky Luke, seul contre tous</td>
-        </tr>
-        <tr>
-        <th>Pour enfants ?</th>
-        <td>Non, trop violent</td>
-        <td>Oui, adapté</td>
-        <td rowspan="2">Pour toute la famille !</td>
-        </tr>
-        <tr>
-        <th>Pour adolescents ?</th>
-        <td>Oui</td>
-        <td>Pas assez violent...</td>
-        </tr>
-        </table>
+    <div>
+        <h2>Tableau montrant les fusions</h2>
+        <div class="table-responsive-custom">
+            <table>
+                <tr>
+                    <th>Titre du film</th>
+                    <th>Pour enfants ?</th>
+                    <th>Pour adolescents ?</th>
+                </tr>
+                <tr>
+                    <td>Massacre à la tronçonneuse</td>
+                    <td>Non, trop violent</td>
+                    <td>Oui</td>
+                </tr>
+                <tr>
+                    <td>Les bisounours font du ski</td>
+                    <td>Oui, adapté</td>
+                    <td>Pas assez violent...</td>
+                </tr>
+                <tr>
+                    <td>Lucky Luke, seul contre tous</td>
+                    <td colspan="2">Pour toute la famille !</td>
+                </tr>
+            </table>
+        </div>
 
-     </div>   
+        <div class="table-responsive-custom">
+            <table>
+                <tr>
+                    <th>Titre du film</th>
+                    <td>Massacre à la tronçonneuse</td>
+                    <td>Les bisounours font du ski</td>
+                    <td>Lucky Luke, seul contre tous</td>
+                </tr>
+                <tr>
+                    <th>Pour enfants ?</th>
+                    <td>Non, trop violent</td>
+                    <td>Oui, adapté</td>
+                    <td rowspan="2">Pour toute la famille !</td>
+                </tr>
+                <tr>
+                    <th>Pour adolescents ?</th>
+                    <td>Oui</td>
+                    <td>Pas assez violent...</td>
+                </tr>
+            </table>
+        </div>
+    </div>   
+
 </body>
 </html>
