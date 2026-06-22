@@ -29,17 +29,17 @@
             margin-bottom: 20px;
         }
 
-        /* Conteneur global vertical */
+        /* Conteneur global : alignement vertical STRICT sur tous les écrans */
         .menu-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* Force l'alignement vertical du haut vers le bas */
             gap: 10px; /* Espace entre les boutons */
         }
 
         /* Style des boutons chics sur fond sombre */
         .nav-link-custom {
             display: block;
-            width: 100%;
+            width: 100%; /* Prend toute la largeur disponible à gauche */
             padding: 12px 10px;
             color: #f8fafc; /* Texte blanc */
             text-decoration: none;
@@ -49,7 +49,7 @@
             font-weight: 500;
             font-size: 0.9rem;
             text-align: center;
-            white-space: normal;
+            white-space: normal; /* Permet au texte de revenir à la ligne si le bouton est étroit */
             word-wrap: break-word;
             transition: all 0.2s ease-in-out;
         }
@@ -65,7 +65,7 @@
 </head>
 <body>
 
-    <div class="menu-title text-center">NAVIGATEUR</div>
+    <div class="menu-title text-center">MENU</div>
 
     <div class="menu-container">
         <a href="Ridwane html/Page1.html" class="nav-link-custom">Page 1</a>
