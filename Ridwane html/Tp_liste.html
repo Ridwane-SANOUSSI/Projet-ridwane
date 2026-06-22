@@ -54,7 +54,18 @@
             margin-bottom: 8px;
         }
 
-        /* 🛠️ GESTION DES RETRAITS */
+        /* 📸 STYLE POUR TES PHOTOS EN ICÔNES */
+        .icone-photo {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%; /* Rend la photo parfaitement ronde */
+            object-fit: cover;
+            margin-right: 10px; /* Espace entre la photo et le texte */
+            vertical-align: middle; /* Aligne horizontalement avec le texte */
+            border: 1px solid #cbd5e1;
+        }
+
+        /* Retraits demandés dans le TP */
         .retrait {
             padding-left: 2rem;
         }
@@ -64,14 +75,7 @@
             list-style-position: inside;
         }
 
-        /* 📸 RECTIFICATION : TES PHOTOS EN GUISE D'ICÔNES / PUCES */
-        .photo { 
-            /* Remplace "avatar.png" par le nom exact de ton image sur GitHub */
-            list-style-image: url('avatar.png'); 
-            padding-left: 2rem;
-        }
-
-        /* Autres styles de puces demandés dans ton TP */
+        /* Autres styles de puces standards du TP */
         .cercle { list-style-type: circle; }
         .carre { list-style-type: square; }
         .rien { list-style-type: none; padding-left: 0; }
@@ -82,7 +86,7 @@
         .lettres_grecques { list-style-type: lower-greek; }
 
         ul li, ol li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         dt {
@@ -152,10 +156,10 @@
             <h2>Quelques listes non ordonnées</h2>
             
             <p>Voici une liste à puce avec tes photos en icônes (= <em>photo</em>) :</p>
-            <ul class="photo">
-                <li>Ronaldo</li>
-                <li>Messi</li>
-                <li>Neymar</li>
+            <ul class="rien">
+                <li><img src="ma_photo.png" class="icone-photo" alt="Photo">Ronaldo</li>
+                <li><img src="ma_photo.png" class="icone-photo" alt="Photo">Messi</li>
+                <li><img src="ma_photo.png" class="icone-photo" alt="Photo">Neymar</li>
             </ul>
 
             <p class="mt-4">Avec <em>circle</em> : <span class="badge bg-light text-secondary">Liste de pays Africains</span></p>
@@ -184,11 +188,11 @@
             <h2>Quelques listes ordonnées</h2>
             
             <p>Liste ordonnée avec tes photos en icônes (= <em>photo</em>) :<br/><span class="text-muted small">Points fondamentaux de la réussite</span></p>
-            <ol class="photo">
-                <li>Discipline</li>
-                <li>Travail</li>
-                <li>Volonté</li>
-                <li>Proactivité</li>
+            <ol class="rien">
+                <li><img src="ma_photo.png" class="icone-photo" alt="Photo">Discipline</li>
+                <li><img src="ma_photo.png" class="icone-photo" alt="Photo">Travail</li>
+                <li><img src="ma_photo.png" class="icone-photo" alt="Photo">Volonté</li>
+                <li><img src="ma_photo.png" class="icone-photo" alt="Photo">Proactivité</li>
             </ol>
 
             <p class="mt-4">Avec <em>decimal-leading-zero</em> :<br/><span class="text-muted small">Étapes pour réaliser des sites web</span></p>
@@ -227,5 +231,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-                </html>
-    
+</html>
