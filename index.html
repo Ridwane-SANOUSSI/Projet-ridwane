@@ -10,9 +10,14 @@
             height: 100%; 
             margin: 0; 
             padding: 0; 
-            overflow: hidden; 
+            overflow-x: hidden; 
             background-color: #f8f9fa;
         }
+
+        body {
+            overflow-y: hidden; 
+        }
+
         .main-container { 
             display: flex; 
             flex-direction: column; 
@@ -22,42 +27,63 @@
             height: 18vh; 
             width: 100%; 
         }
-        /* Zone du milieu forcée en ligne (côte à côte) sur TOUS les écrans */
         .middle-zone { 
             display: flex; 
-            flex-direction: row !important; /* Empeche l'empilement sur mobile */
+            flex-direction: row !important; 
             height: 63vh; 
             width: 100%; 
         }
-        /* Menu strictement bloqué à gauche à 25% de la largeur */
         .menu-frame { 
             width: 25%; 
             height: 100%; 
             border-right: 2px solid #ccc; 
         }
-        /* Pages du menu strictement bloquées à droite à 75% de la largeur */
         .content-frame { 
             width: 75%; 
             height: 100%; 
         }
+        
+        /* 🎨 Modification ici : Ajout de l'arrière-plan professionnel pour ton footer */
         .footer-zone { 
             height: 19vh; 
             width: 100%; 
+            background-color: #e2e8f0; /* Bleu-gris sobre qui se marie parfaitement avec ton beige et ton menu */
+            padding: 4px 0; /* Donne une petite respiration élégante autour de l'iframe */
         }
+        
         iframe { 
             width: 100%; 
             height: 100%; 
             border: none; 
             display: block; 
+            background-color: transparent; /* Permet de laisser voir le fond si nécessaire */
         }
 
-        /* Ajustement léger pour les petits écrans sans casser la structure du prof */
         @media (max-width: 768px) {
             .header-zone { height: 15vh; }
             .middle-zone { height: 70vh; }
             .footer-zone { height: 15vh; }
-            .menu-frame { width: 30%; } /* Un tout petit peu plus large sur mobile pour les boutons */
+            .menu-frame { width: 30%; } 
             .content-frame { width: 70%; }
+        }
+
+        @media (max-height: 500px) {
+            body {
+                overflow-y: auto !important; 
+            }
+            .main-container {
+                height: auto !important; 
+            }
+            .header-zone { 
+                height: 80px !important; 
+            }
+            .middle-zone { 
+                height: 400px !important; 
+            }
+            .footer-zone { 
+                height: 80px !important; 
+                background-color: #e2e8f0; /* Reste actif en mode paysage */
+            }
         }
     </style>
 </head>
